@@ -1,0 +1,4369 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#"
+     xml:base="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:virtrdf="http://www.openlinksw.com/schemas/virtrdf#"
+     xmlns:webprotege="http://webprotege.stanford.edu/">
+    <owl:Ontology rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl">
+        <dcterms:license>CC BY-NC-ND</dcterms:license>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.openlinksw.com/schemas/virtrdf#Geometry -->
+
+    <rdfs:Datatype rdf:about="http://www.openlinksw.com/schemas/virtrdf#Geometry"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#availableLanguages -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#availableLanguages">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Languages"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#educationLevel -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#educationLevel">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gender -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gender">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#professionalPosition -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#professionalPosition">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ProfessionalPosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#spokenLanguage -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#spokenLanguage">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Languages"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#age -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#age">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#baccalaureate -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#baccalaureate">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#country -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#country">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#OriginLocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gayFriendly -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gayFriendly">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#iWouldRatherNotAnswer -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#iWouldRatherNotAnswer">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gender"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kidsFriendly -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kidsFriendly">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#man -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#man">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gender"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mediumPositionEmployee -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mediumPositionEmployee">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ProfessionalPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#nonBinary -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#nonBinary">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gender"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#nursery -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#nursery">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#priceCurrency -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#priceCurrency">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#OriginLocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#primary -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#primary">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#secondary -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#secondary">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#selfEmployed -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#selfEmployed">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ProfessionalPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#seniorManagementEmployee -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#seniorManagementEmployee">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ProfessionalPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#university -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#university">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unskilledEmployee -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unskilledEmployee">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ProfessionalPosition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#woman -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#woman">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gender"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Alcazar -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Alcazar">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Amphitheatre -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Amphitheatre">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Aqueduct -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Aqueduct">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Arch -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Arch">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ArcheologicalSite -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ArcheologicalSite">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Basilica -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Basilica">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Beach -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Beach">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#BellTower -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#BellTower">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Bridge -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Bridge">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Canal -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Canal">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Castle -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Castle">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Catacomb -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Catacomb">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Cathedral -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Cathedral">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Cave -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Cave">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Chapel -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Chapel">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Church -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Church">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Convent -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Convent">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#CreaftmanshipResource -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#CreaftmanshipResource">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Desert -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Desert">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationLevel -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationLevel">
+        <rdfs:label xml:lang="es">Educación</rdfs:label>
+        <rdfs:label xml:lang="en">EducationLevel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Excursionist -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Excursionist">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Forest -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Forest">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Garden -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Garden">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gastronomy -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gastronomy">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gender -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Gender">
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+        <rdfs:label>Género</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Geyser -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Geyser">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Group -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Group">
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+        <rdfs:label>Grupo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HandicraftAndLocalProduct -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HandicraftAndLocalProduct">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TourismResourceOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Lake -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Lake">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Landform -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Landform">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Languages -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Languages">
+        <rdfs:label xml:lang="es">Idiomas</rdfs:label>
+        <rdfs:label xml:lang="en">Languages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Minaret -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Minaret">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Monument -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Monument">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Mosque -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Mosque">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Mountain -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Mountain">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalPark -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalPark">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TourismResourceOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalViewPoint -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalViewPoint">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#OriginLocation -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#OriginLocation">
+        <rdfs:label xml:lang="es">Origen</rdfs:label>
+        <rdfs:label xml:lang="en">OriginLocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Palace -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Palace">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#spokenLanguage"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#educationLevel"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gender"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#age"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ProfessionalPosition -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ProfessionalPosition">
+        <rdfs:label xml:lang="es">CargoProfesional</rdfs:label>
+        <rdfs:label xml:lang="en">ProfessionalPosition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Reservoir -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Reservoir">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Resident -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Resident">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#River -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#River">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Salina -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Salina">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Sanctuary -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Sanctuary">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Spring -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Spring">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Swamp -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Swamp">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Synagogue -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Synagogue">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TourismResourceOfInterest -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TourismResourceOfInterest">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="es">Recurso de interés turístico</rdfs:label>
+        <rdfs:label xml:lang="en">Tourism Resource Of Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TouristAttractionSite -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TouristAttractionSite">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Trail -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Trail">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TrailMTB -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TrailMTB">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Tree -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Tree">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#UrbanViewPoint -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#UrbanViewPoint">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Valley -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Valley">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#VernacularArchitecture -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#VernacularArchitecture">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#VineyardShelter -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#VineyardShelter">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Volcano -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Volcano">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Wall -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Wall">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#HistoricalAndCulturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Waterfall -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Waterfall">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#accesibleVehicleFleet -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#accesibleVehicleFleet"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#accessForDisabled -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#accessForDisabled"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#additionalAccommodationService -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#additionalAccommodationService"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#additionalLuggage -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#additionalLuggage"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#additionalRoomService -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#additionalRoomService"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#airConditioning -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#airConditioning"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#alarmClock -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#alarmClock"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#amenities -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#amenities"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#arcade -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#arcade"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#audiodescription -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#audiodescription"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#audioguide -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#audioguide"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#auditory -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#auditory"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#augmentedReality -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#augmentedReality"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#babySeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#babySeat"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#bar -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#bar"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#basketballCourt -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#basketballCourt"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#beautyTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#beautyTreatment"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#bikeTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#bikeTour"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#chargingPlug -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#chargingPlug"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#childrenGames -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#childrenGames"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#cloakRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#cloakRoom"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#coffeeMachine -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#coffeeMachine"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#conferenceRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#conferenceRoom"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#cradle -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#cradle"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#diningRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#diningRoom"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#dryer -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#dryer"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#educationalTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#educationalTour"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#event -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#event"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#fastLane -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#fastLane"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#footballField -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#footballField"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#gamification -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#gamification"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#gearProvision -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#gearProvision"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#golfCourse -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#golfCourse"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#groupTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#groupTour"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#guidedTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#guidedTour"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#gym -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#gym"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#heating -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#heating"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#infirmary -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#infirmary"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#informationPoint -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#informationPoint"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#irnoningKit -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#irnoningKit"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#jacuzzi -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#jacuzzi"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#kitchen -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#kitchen"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#lifeGuard -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#lifeGuard"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#lockers -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#lockers"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#luggageStorage -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#luggageStorage"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#microwave -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#microwave"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#minibar -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#minibar"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#nightTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#nightTour"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#onBoardFoodService -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#onBoardFoodService"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#outdoorTables -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#outdoorTables"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#packs -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#packs"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#paddleCourt -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#paddleCourt"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#parkingFacility -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#parkingFacility"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#petFriendlyVehicles -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#petFriendlyVehicles"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#pool -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#pool"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#privateTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#privateTour"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#qrCodes -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#qrCodes"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#rentByTheHour -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#rentByTheHour"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#restaurant -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#restaurant"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#roomService -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#roomService"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#safetyBox -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#safetyBox"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#saleOfProducts -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#saleOfProducts"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#sauna -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#sauna"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#shop -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#shop"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#showers -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#showers"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#smokingRooms -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#smokingRooms"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#spa -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#spa"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#telephone -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#telephone"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#tennisCourt -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#tennisCourt"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#transport -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#transport"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#tv -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#tv"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#venue -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#venue"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#vipRoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#vipRoom"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#virtualAdvisor -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#virtualAdvisor"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#virtualReality -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#virtualReality"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#voucher -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#voucher"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#wifi -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#wifi"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#wiredInternet -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2008/05/skos#wiredInternet"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#AcrobaticsShow -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#AcrobaticsShow"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ArtEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ArtEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Ballet -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Ballet"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Bullfight -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Bullfight"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#BusinessEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#BusinessEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#CabaretShow -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#CabaretShow"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Cinema -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Cinema"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Circus -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Circus"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ClownAct -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ClownAct"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Competition -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Competition"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Concert -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Concert"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Congress -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Congress"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Convention -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Convention"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#DanceEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#DanceEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#DigitalCulture -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#DigitalCulture"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EducationEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EnotourismEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#EnotourismEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Environmental -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Environmental"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ExhibitionEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ExhibitionEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Fair -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Fair"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#FerryType_24 -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#FerryType_24"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Festival -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Festival"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Flamenco -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Flamenco"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#FoodEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#FoodEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Hiphop -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Hiphop"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Jazz -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Jazz"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#MagicShow -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#MagicShow"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#MimeAct -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#MimeAct"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Music -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Music"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Musical -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Musical"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NFC -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NFC"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NewsRadioTv -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#NewsRadioTv"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Opera -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Opera"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Pantomime -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Pantomime"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#PoetryExhibition -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#PoetryExhibition"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#PuppetShow -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#PuppetShow"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Race -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Race"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ReligionEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ReligionEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Restaurant -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Restaurant"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#SUV -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#SUV"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Specials -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Specials"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Spectacle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Spectacle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#SportsEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#SportsEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#SportsMatch -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#SportsMatch"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#StandupComedy -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#StandupComedy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Tap -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#Tap"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TheaterPlay -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TheaterPlay"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TraditionalFestival -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#TraditionalFestival"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#WineFestival -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#WineFestival"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#abseiling -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#abseiling"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#accessForDisabled -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#accessForDisabled"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#accommodationOnly -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#accommodationOnly"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#acropolis -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#acropolis"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#additionalDriver -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#additionalDriver"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#adventure -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#adventure"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#adverseWeatherConditions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#adverseWeatherConditions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#africanCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#africanCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#alIncluded -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#alIncluded"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#alcazar -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#alcazar"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#allInclusive -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#allInclusive"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#allTerrain -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#allTerrain"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#almostEmpty -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#almostEmpty"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#almostFull -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#almostFull"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ampelographic -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ampelographic"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#amphibiousChair -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#amphibiousChair"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#amphitheatre -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#amphitheatre"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#anchoring -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#anchoring"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#apliedArts -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#apliedArts"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#aqueduct -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#aqueduct"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#arch -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#arch"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#archeologicalSite -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#archeologicalSite"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#archeology -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#archeology"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#archery -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#archery"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#architecture -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#architecture"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#areaSeparatedFromSurroundings -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#areaSeparatedFromSurroundings"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#argentinianCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#argentinianCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#armedConflicts -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#armedConflicts"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#auditory -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#auditory"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#automatic -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#automatic"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#avalanches -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#avalanches"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#babysitter -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#babysitter"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bankCard -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bankCard"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bankTransfer -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bankTransfer"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#banquet -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#banquet"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#basic -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#basic"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#basilical -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#basilical"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#basketballField -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#basketballField"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bathingArea -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bathingArea"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#beautySalon -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#beautySalon"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bellTower -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bellTower"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bicycle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bicycle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bizum -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bizum"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#blackSand -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#blackSand"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#blindSampling -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#blindSampling"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boardingPriority -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boardingPriority"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boat -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boat"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boatAccess -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boatAccess"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#botanical -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#botanical"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boutiqueHotel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#boutiqueHotel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#brazilianCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#brazilianCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#breakfast -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#breakfast"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#breakfastOptions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#breakfastOptions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#budgetCamping -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#budgetCamping"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#budgetHotel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#budgetHotel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#buffet -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#buffet"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#buggy -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#buggy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bullfighting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bullfighting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bus -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#bus"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#busStop -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#busStop"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#business -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#business"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#businessHotel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#businessHotel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cCsSAE -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cCsSAE"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cHAdeMO -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cHAdeMO"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cableCarStop -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cableCarStop"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cableFerry -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cableFerry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cableWayStop -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cableWayStop"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cafeteria -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cafeteria"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#calmWaters -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#calmWaters"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canoe -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canoe"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canoeRaft -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canoeRaft"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canoping -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canoping"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canyoning -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#canyoning"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#carSedan -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#carSedan"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#caravanMainSocket -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#caravanMainSocket"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cash -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cash"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#castle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#castle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#castleCategory -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#castleCategory"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#catacomb -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#catacomb"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#catamaran -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#catamaran"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#catering -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#catering"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cathedral -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cathedral"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cathedralMuseum -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cathedralMuseum"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cavePainting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cavePainting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#caving -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#caving"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cctv -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cctv"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cemetery -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cemetery"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ceramics -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ceramics"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chainFerry -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chainFerry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chapeñ -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chapeñ"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#charterhouse -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#charterhouse"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#checksAndPromissoryNotes -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#checksAndPromissoryNotes"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chinese -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chinese"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chineseCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#chineseCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#church -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#church"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#citadel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#citadel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cleaningServices -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cleaningServices"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#climbing -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#climbing"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cloakRoom -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cloakRoom"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#clothingRental -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#clothingRental"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coachBus -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coachBus"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coastalDestination -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coastalDestination"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coastalEvent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coastalEvent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coldWave -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coldWave"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#combustion -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#combustion"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#commercialVanTruck -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#commercialVanTruck"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#community -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#community"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#compressedAirShooting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#compressedAirShooting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#contemporaryArt -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#contemporaryArt"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#convent -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#convent"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#convertible -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#convertible"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cooking -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cooking"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coupe -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#coupe"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#crossover -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#crossover"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cruiseShip -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cruiseShip"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cryptocurrencies -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cryptocurrencies"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#currencyExchange -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#currencyExchange"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#customerService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#customerService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cyberattacks -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#cyberattacks"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dance -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dance"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#decorativeArts -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#decorativeArts"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#destinationApp -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#destinationApp"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#digitalSystemsFailures -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#digitalSystemsFailures"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#diocesanMuseum -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#diocesanMuseum"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#directBill -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#directBill"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#disabledParking -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#disabledParking"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#disembarkationPriority -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#disembarkationPriority"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#doubleCabin -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#doubleCabin"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#doubleRoom -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#doubleRoom"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dryCleaning -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dryCleaning"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dualJ1772 -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dualJ1772"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dualmennekes -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#dualmennekes"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#economy -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#economy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electric -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electric"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electricAssist -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electricAssist"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electricMoped -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electricMoped"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electricScooter -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#electricScooter"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#elevator -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#elevator"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#empty -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#empty"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#english -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#english"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#enoteca -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#enoteca"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#enoturismDestination -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#enoturismDestination"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#entertaiment -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#entertaiment"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#equipmentTransport -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#equipmentTransport"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ethnology -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ethnology"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#european -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#european"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#exhibition -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#exhibition"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#extendedCabPickup -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#extendedCabPickup"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#externalSecurity -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#externalSecurity"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#extraBed -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#extraBed"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fastFerry -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fastFerry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fastFood -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fastFood"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fencedOff -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fencedOff"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fences -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fences"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ferry -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ferry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fineArts -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fineArts"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#firstClass -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#firstClass"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fishAndSeafood -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fishAndSeafood"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fishingArea -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fishingArea"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#flood -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#flood"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#floodLight -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#floodLight"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fog -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fog"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#footballField -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#footballField"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#footbath -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#footbath"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#forBabies -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#forBabies"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#forestFire -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#forestFire"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fortress -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fortress"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#french -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#french"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#frenchCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#frenchCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#friday -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#friday"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#full -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#full"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fullboard -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fullboard"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fusion -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#fusion"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#geocaching -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#geocaching"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#geologicalPhenomena -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#geologicalPhenomena"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#germanCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#germanCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#glutenFreeOptions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#glutenFreeOptions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#goldsmith -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#goldsmith"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gps -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gps"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#greekCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#greekCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#greenCamping -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#greenCamping"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#greenHotel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#greenHotel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#guard24Hours -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#guard24Hours"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gymkhana -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#gymkhana"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#halfboard -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#halfboard"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hamburger -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hamburger"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#handicraft -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#handicraft"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hauteCousine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hauteCousine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#heatWave -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#heatWave"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#helicopter -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#helicopter"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#high -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#high"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#highChairs -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#highChairs"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#highRange -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#highRange"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#highTemperature -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#highTemperature"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#history -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#history"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#homeCooking -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#homeCooking"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#homeDelivery -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#homeDelivery"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#horizontalSampling -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#horizontalSampling"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#horseCarriage -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#horseCarriage"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#horseRiding -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#horseRiding"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hotelSpa -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hotelSpa"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#human -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#human"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hunting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hunting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hurricane -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hurricane"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hydrospeed -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#hydrospeed"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ice -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ice"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#indianCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#indianCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#indoor -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#indoor"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#inflatableBoat -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#inflatableBoat"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#inland -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#inland"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#inlandDestination -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#inlandDestination"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#insurance -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#insurance"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#interactive -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#interactive"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#isolated -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#isolated"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#italianCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#italianCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#j1772 -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#j1772"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#japanese -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#japanese"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#japaneseCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#japaneseCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jellyfishNet -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jellyfishNet"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jetBoat -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jetBoat"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jetFerry -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jetFerry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jetski -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#jetski"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kayak -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kayak"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kebab -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kebab"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kitchen"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kiteSurf -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#kiteSurf"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#koreanCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#koreanCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lactoseFreeOptions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lactoseFreeOptions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#latinAmericanCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#latinAmericanCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#laundry -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#laundry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#library -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#library"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lifeGuard -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lifeGuard"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#limo -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#limo"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#literature -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#literature"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#litterBins -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#litterBins"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lonja -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lonja"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#low -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#low"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lowRange -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lowRange"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lowTemperature -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lowTemperature"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lowers -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#lowers"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#luggageTransport -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#luggageTransport"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#macrobiotic -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#macrobiotic"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mandatory -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mandatory"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#manual -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#manual"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#maritime -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#maritime"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#medicineAndPharmacy -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#medicineAndPharmacy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#medium -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#medium"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mexicanCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mexicanCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#midRange -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#midRange"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#middleEastCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#middleEastCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#military -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#military"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#minaret -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#minaret"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mining -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mining"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#modernArt -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#modernArt"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monastery -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monastery"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monasteryCattegory -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monasteryCattegory"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monday -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monday"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monospace -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monospace"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monument -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#monument"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#moped -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#moped"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mosque -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mosque"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#motorboat -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#motorboat"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#motorcycle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#motorcycle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#motorhome -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#motorhome"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mountainDestination -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#mountainDestination"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#multiDisciplinar -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#multiDisciplinar"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#museumHouse -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#museumHouse"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#music -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#music"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#national -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#national"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#naturalScience -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#naturalScience"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#necropolis -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#necropolis"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#notAvailable -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#notAvailable"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#numismatic -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#numismatic"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#nutsFreeOptions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#nutsFreeOptions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#onFoot -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#onFoot"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#onlineSampling -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#onlineSampling"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#optional -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#optional"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#orienteering -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#orienteering"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#outOfService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#outOfService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#outdoor -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#outdoor"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#outdoorTables -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#outdoorTables"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paddleCourt -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paddleCourt"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paddleSurf -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paddleSurf"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paddleSurfArea -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paddleSurfArea"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paintball -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paintball"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#painting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#painting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#palace -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#palace"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paleonthology -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#paleonthology"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#parochial -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#parochial"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#partly -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#partly"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#passengerVehicleTransport -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#passengerVehicleTransport"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#patrolled -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#patrolled"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#payPal -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#payPal"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#peruvianCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#peruvianCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#petTransport -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#petTransport"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#pickup -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#pickup"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#pizza -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#pizza"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#plane -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#plane"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#plans -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#plans"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#pneumaticShooting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#pneumaticShooting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#popularArtsAndTraditions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#popularArtsAndTraditions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#preOrder -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#preOrder"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#prehistoric -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#prehistoric"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#premiumEconomy -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#premiumEconomy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#private -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#private"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateCar -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateCar"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateChef -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateChef"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateSalons -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateSalons"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateVehicle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#privateVehicle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#promenade -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#promenade"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#provincial -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#provincial"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#public -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#public"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#publicHealthAlerts -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#publicHealthAlerts"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#publicTransport -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#publicTransport"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#quad -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#quad"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#quadrupleCabin -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#quadrupleCabin"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#quadrupleRoom -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#quadrupleRoom"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rafting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rafting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#railway -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#railway"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rainFlood -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rainFlood"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rainfall -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rainfall"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ramp -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ramp"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#recreational -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#recreational"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#recreationalActivities -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#recreationalActivities"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#regularCabPickup -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#regularCabPickup"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rentalCar -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rentalCar"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rentalVehicle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rentalVehicle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#reservation -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#reservation"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rices -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rices"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#river -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#river"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#roadster -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#roadster"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rockyBottom -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rockyBottom"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rosarium -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#rosarium"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#runningTrack -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#runningTrack"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ruralDestination -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ruralDestination"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ruralHotel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ruralHotel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sacredArt -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sacredArt"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#samplingCourse -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#samplingCourse"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sanctuary -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sanctuary"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sandBottom -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sandBottom"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#saturday -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#saturday"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#scienceAndTecnhology -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#scienceAndTecnhology"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#scooter -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#scooter"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#scubaDiving -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#scubaDiving"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sculpture -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sculpture"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#seasonalCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#seasonalCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#securityStaff -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#securityStaff"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#segway -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#segway"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#selfService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#selfService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ship -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#ship"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#shop -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#shop"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#showers -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#showers"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#shuttle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#shuttle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#signatureCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#signatureCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#singleCabin -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#singleCabin"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#singleRoom -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#singleRoom"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sled -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sled"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sleepingCar -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sleepingCar"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#smartWristband -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#smartWristband"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snorkeling -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snorkeling"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snorkelingArea -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snorkelingArea"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snow -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snow"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snowChains -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snowChains"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snowIce -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#snowIce"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sommelier -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sommelier"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#spanishCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#spanishCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#specials -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#specials"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sport -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sport"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sportBroadcasting -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sportBroadcasting"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#stationWagon -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#stationWagon"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#strongWaves -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#strongWaves"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#subwayStation -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#subwayStation"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sumptuaryArts -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sumptuaryArts"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sunLoungerRental -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sunLoungerRental"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sunday -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sunday"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sunshadeRental -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#sunshadeRental"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surf -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surf"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surfPracticeArea -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surfPracticeArea"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surreyBike -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surreyBike"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surveillance -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#surveillance"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#swimmingArea -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#swimmingArea"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#swimmingPool -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#swimmingPool"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#synagogue -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#synagogue"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#takeAway -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#takeAway"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tapas -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tapas"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tastingMenu -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tastingMenu"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#telephoneService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#telephoneService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#temple -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#temple"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tennisCourt -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tennisCourt"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#terrace -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#terrace"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#terrorism -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#terrorism"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tesla -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tesla"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#textile -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#textile"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thaiCuisine -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thaiCuisine"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thematicMuseum -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thematicMuseum"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#themeCamping -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#themeCamping"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#themeHotel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#themeHotel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thunderstorms -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thunderstorms"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thursday -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#thursday"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#toilets -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#toilets"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#topRange -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#topRange"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tornado -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tornado"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristBus -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristBus"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristCard -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristCard"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristOffice -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristOffice"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristTrain -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#touristTrain"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#townHall -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#townHall"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#train -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#train"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tramStop -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tramStop"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#transports -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#transports"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#travelAgency -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#travelAgency"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tripleCabin -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tripleCabin"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tripleRoom -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tripleRoom"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tropicalCyclone -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tropicalCyclone"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#truck -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#truck"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tsunami -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tsunami"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tuesday -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tuesday"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tuktuk -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#tuktuk"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#twoWheelVehicle -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#twoWheelVehicle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#type2 -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#type2"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#type3 -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#type3"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unAccompainedChildService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unAccompainedChildService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unesco -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unesco"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#universitary -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#universitary"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unlimitedDrinks -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#unlimitedDrinks"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#urbanBeach -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#urbanBeach"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#urbanDestination -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#urbanDestination"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vacationCamping -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vacationCamping"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vacationHotel -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vacationHotel"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#valetParking -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#valetParking"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#van -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#van"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vegan -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vegan"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#veganOptions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#veganOptions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vegetarian -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vegetarian"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vegetarianOptions -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#vegetarianOptions"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#verticalSampling -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#verticalSampling"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#viaFerrata -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#viaFerrata"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#visasAndPermits -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#visasAndPermits"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#voucher -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#voucher"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wakeBoarding -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wakeBoarding"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wakeBoardingArea -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wakeBoardingArea"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wakeFoil -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wakeFoil"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#walkway -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#walkway"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wall -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wall"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wallEuro -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wallEuro"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wasteCollection -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wasteCollection"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#waterCanyoning -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#waterCanyoning"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#waterCraftRental -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#waterCraftRental"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wax -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wax"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wednesday -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wednesday"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#whiteSand -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#whiteSand"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wind -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wind"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#windy -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#windy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wineBar -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wineBar"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wineClub -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wineClub"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wineSpa -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#wineSpa"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#workshop -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#workshop"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#worldwide -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#worldwide"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#zen -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/modelo-v1-0-0.owl#zen"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

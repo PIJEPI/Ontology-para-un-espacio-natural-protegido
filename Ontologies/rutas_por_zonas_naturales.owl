@@ -1,0 +1,2039 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://localhost/rutas_por_zonas_naturales.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://localhost/rutas_por_zonas_naturales.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AlpineRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoordenadasGPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossCountrySkiingRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CycleTouring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyclingRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DireccionPostal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DocumentPDF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DocumentoOnline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrivingRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuiaDeAcceso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HikingRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Localizacion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mapa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotorcycleRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalMonument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalPark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NatureReserve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Off-road_Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaginaHTML"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParqueRegional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photograph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtectedArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtectedLandscape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuadBikeRoute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RutaEnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WalkingRoute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contieneRutaParcial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaADistancia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneCercaPuntoDeInteres"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneCoordenadasGPS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneDireccionPostal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneGuiaDeAcceso"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tienePuntoDeFinalizacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tienePuntoDeInicio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tienePuntoIntermedio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneServicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#URI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#altitudMaxima"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#altitudMinima"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#calle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cercaniaDeZonasHabitadas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#claseDeCamino"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#climaEnInvierno"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#climaEnOtoño"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#climaEnPrimavera"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#climaEnVerano"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#codigoPostal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#condicionClimatica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#condicionFisicaPrevia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#desnivel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#desnivelBajada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#desnivelSubida"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#desnivelTotal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dificultadDeOrientacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dificultadDelTerreno"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadDeAguaPotable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadDeSombra"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadEnInvierno"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadEnOtoño"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadEnPrimavera"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadEnVerano"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duracionEnTiempo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#experienciaOrientacionPrevia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitud"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#localidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitud"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitudEnKm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#posibilidadDeAcampada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#provincia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#señalizacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipoDeFirme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DocumentoPDF_RutaSenderoLagunaDelJaral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto1_RutaSenderoLagunaDelJaral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto1_RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto2_RutaSenderoLagunaDelJaral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto2_RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto3_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto3_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto3_RutaSenderoLagunaDelJaral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto3_RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Foto4_RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa1_RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa1_RutadHugRogerIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa2_RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa2_RutadHugRogerIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa3_RutadHugRogerIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mapa_RutaSenderoLagunaDelJaral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MonumentoNaturalTomboloDeTrafalgar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaginaHTML_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaginaHTML_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaginaHTML_RutaSenderoLagunaDelJaral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaginaHTML_RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaginaHTML_RutadHugRogerIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParqueNacionalDeDoñana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParqueNacionalDeOrdesaYMontePerdido"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParqueNaturalSierraDeIrta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_EnBicicleta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RutadHugRogerIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Video1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Video1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Video2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:duration"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AlpineRoute"/>
+        <Class IRI="#WalkingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarRoute"/>
+        <Class IRI="#DrivingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoordenadasGPS"/>
+        <Class IRI="#Localizacion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossCountrySkiingRoute"/>
+        <Class IRI="#WalkingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CycleTouring"/>
+        <Class IRI="#CyclingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyclingRoute"/>
+        <Class IRI="#Route"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DireccionPostal"/>
+        <Class IRI="#Localizacion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DocumentPDF"/>
+        <Class IRI="#DocumentoOnline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DocumentoOnline"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrivingRoute"/>
+        <Class IRI="#Route"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuiaDeAcceso"/>
+        <Class IRI="#Localizacion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HikingRoute"/>
+        <Class IRI="#WalkingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mapa"/>
+        <Class IRI="#DocumentoOnline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotorcycleRoute"/>
+        <Class IRI="#DrivingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalPark"/>
+        <Class IRI="#ProtectedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalMonument"/>
+        <Class IRI="#ProtectedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalPark"/>
+        <Class IRI="#ProtectedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureReserve"/>
+        <Class IRI="#ProtectedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Off-road_Route"/>
+        <Class IRI="#DrivingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaginaHTML"/>
+        <Class IRI="#DocumentoOnline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParqueRegional"/>
+        <Class IRI="#ProtectedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photograph"/>
+        <Class IRI="#DocumentoOnline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtectedArea"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtectedLandscape"/>
+        <Class IRI="#ProtectedArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuadBikeRoute"/>
+        <Class IRI="#DrivingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Route"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Route"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#tienePuntoDeFinalizacion"/>
+            <Class IRI="#CoordenadasGPS"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Route"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#tienePuntoDeInicio"/>
+            <Class IRI="#CoordenadasGPS"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Route"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#tienePuntoIntermedio"/>
+            <Class IRI="#CoordenadasGPS"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RutaEnMountainBike"/>
+        <Class IRI="#CyclingRoute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class IRI="#DocumentoOnline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WalkingRoute"/>
+        <Class IRI="#Route"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DocumentPDF"/>
+        <Class IRI="#Mapa"/>
+        <Class IRI="#PaginaHTML"/>
+        <Class IRI="#Photograph"/>
+        <Class IRI="#Video"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#DocumentPDF"/>
+        <NamedIndividual IRI="#DocumentoPDF_RutaSenderoLagunaDelJaral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto1_RutaSenderoLagunaDelJaral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto1_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto2_RutaSenderoLagunaDelJaral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto2_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto3_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto3_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto3_RutaSenderoLagunaDelJaral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto3_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Photograph"/>
+        <NamedIndividual IRI="#Foto4_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa1_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa1_RutadHugRogerIII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa2_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa2_RutadHugRogerIII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa3_RutadHugRogerIII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mapa"/>
+        <NamedIndividual IRI="#Mapa_RutaSenderoLagunaDelJaral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalMonument"/>
+        <NamedIndividual IRI="#MonumentoNaturalTomboloDeTrafalgar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaginaHTML"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaginaHTML"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaginaHTML"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaSenderoLagunaDelJaral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaginaHTML"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PaginaHTML"/>
+        <NamedIndividual IRI="#PaginaHTML_RutadHugRogerIII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NationalPark"/>
+        <NamedIndividual IRI="#ParqueNacionalDeDoñana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NationalPark"/>
+        <NamedIndividual IRI="#ParqueNacionalDeOrdesaYMontePerdido"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalPark"/>
+        <NamedIndividual IRI="#ParqueNaturalSierraDeIrta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RutaEnMountainBike"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RutaEnMountainBike"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CyclingRoute"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_EnBicicleta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HikingRoute"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HikingRoute"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Route"/>
+        <NamedIndividual IRI="#RutadHugRogerIII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Video"/>
+        <NamedIndividual IRI="#Video1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Video"/>
+        <NamedIndividual IRI="#Video1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Video"/>
+        <NamedIndividual IRI="#Video2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_EnBicicleta"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <NamedIndividual IRI="#Foto1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <NamedIndividual IRI="#Foto2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <NamedIndividual IRI="#Foto3_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <NamedIndividual IRI="#Mapa1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <NamedIndividual IRI="#Mapa2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <NamedIndividual IRI="#Video1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#Foto1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#Foto2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#Foto3_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#Mapa1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#Mapa2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#Video1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <NamedIndividual IRI="#Video2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <NamedIndividual IRI="#DocumentoPDF_RutaSenderoLagunaDelJaral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <NamedIndividual IRI="#Foto1_RutaSenderoLagunaDelJaral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <NamedIndividual IRI="#Foto2_RutaSenderoLagunaDelJaral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <NamedIndividual IRI="#Foto3_RutaSenderoLagunaDelJaral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <NamedIndividual IRI="#Mapa_RutaSenderoLagunaDelJaral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaSenderoLagunaDelJaral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <NamedIndividual IRI="#Foto1_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <NamedIndividual IRI="#Foto2_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <NamedIndividual IRI="#Foto3_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <NamedIndividual IRI="#Foto4_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <NamedIndividual IRI="#Mapa1_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <NamedIndividual IRI="#Mapa2_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaTomboloDeTrafalgar_Senderismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutadHugRogerIII"/>
+        <NamedIndividual IRI="#Mapa1_RutadHugRogerIII"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutadHugRogerIII"/>
+        <NamedIndividual IRI="#Mapa2_RutadHugRogerIII"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutadHugRogerIII"/>
+        <NamedIndividual IRI="#Mapa3_RutadHugRogerIII"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <NamedIndividual IRI="#RutadHugRogerIII"/>
+        <NamedIndividual IRI="#PaginaHTML_RutadHugRogerIII"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#DocumentoPDF_RutaSenderoLagunaDelJaral"/>
+        <Literal>http://www.andarural.com/andarural/cargaPDF.action?rutaId=11636</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/imgServer.do?id=108314</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/7141/175330/30921.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto1_RutaSenderoLagunaDelJaral"/>
+        <Literal>http://www.andarural.com/imagenes/200909/23/145303/web_19915_es.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto1_RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>http://lh4.ggpht.com/_Kvqis3TncS8/Sr3zKO0OURI/AAAAAAAANrs/s08u2OSkF8k/Tombolo%20desde%20la%20Torre%20de%20Meca.jpg.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/imgServer.do?id=108308</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/7141/175330/30924.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto2_RutaSenderoLagunaDelJaral"/>
+        <Literal>http://www.andarural.com/imagenes/200909/23/145303/web_19941_es.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto2_RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>http://lh4.ggpht.com/_Kvqis3TncS8/SrYRC1eCOxI/AAAAAAAANj8/Wj2JsU0C_dM/02%20-%20T%C3%B3mbolo%20de%20Trafalgar.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto3_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/imgServer.do?id=108302</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto3_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/7141/175330/30925.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto3_RutaSenderoLagunaDelJaral"/>
+        <Literal>http://www.andarural.com/imagenes/200909/23/145303/web_19927_es.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto3_RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>http://lh6.ggpht.com/_Kvqis3TncS8/SrYQ99kYpjI/AAAAAAAANjY/E3Qia4NPk9A/03%20-%20T%C3%B3mbolo%20de%20Trafalgar.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Foto4_RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>http://lh6.ggpht.com/_Kvqis3TncS8/SrYREhwVU-I/AAAAAAAANkI/DY55KK0qJB4/08%20-%20T%C3%B3mbolo%20de%20Trafalgar.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/geoServer.do?format=kml&amp;id=408835&amp;includeDisplayed=true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/view.do?id=175330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa1_RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>http://es.wikiloc.com/wikiloc/view.do?&amp;id=537795</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa1_RutadHugRogerIII"/>
+        <Literal>http://oliba.uoc.edu/vallsdaneu/images/stories/mapa-ruta.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa2_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/view.do?id=408835</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/geoServer.do?format=kml&amp;id=175330&amp;includeDisplayed=true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa2_RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>http://es.wikiloc.com/wikiloc/geoServer.do?format=kml&amp;id=537795&amp;includeDisplayed=true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa2_RutadHugRogerIII"/>
+        <Literal>http://oliba.uoc.edu/vallsdaneu/kml/HugRoger-Itinerari.kml</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa3_RutadHugRogerIII"/>
+        <Literal>http://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=http:%2F%2Foliba.uoc.edu%2Fvallsdaneu%2Fkml%2FHugRoger-Itinerari.kml&amp;sll=40.396764,-3.713379&amp;sspn=13.311698,19.753418&amp;ie=UTF8&amp;z=10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Mapa_RutaSenderoLagunaDelJaral"/>
+        <Literal>http://www.andarural.com/andarural/?ruta=11636</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/view.do?id=408835</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/view.do?id=175330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaSenderoLagunaDelJaral"/>
+        <Literal>http://www.andarural.com/andarural/?ruta=11636</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#PaginaHTML_RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>http://rutasyfotos.blogspot.com/2009/09/tombolo-de-trafalgar.html</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#PaginaHTML_RutadHugRogerIII"/>
+        <Literal>http://oliba.uoc.edu/vallsdaneu/index.php?option=com_content&amp;view=article&amp;id=30&amp;Itemid=46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altitudMaxima"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>486</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altitudMinima"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#condicionFisicaPrevia"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>buena condición física</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#desnivelBajada"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>1499</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#desnivelSubida"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>1495</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#disponibilidadEnInvierno"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#disponibilidadEnOtoño"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#disponibilidadEnPrimavera"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#disponibilidadEnVerano"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracionEnTiempo"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>8h 46m</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitudEnKm"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>54,41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+        <NamedIndividual IRI="#RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>circular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altitudMaxima"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>2153</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altitudMinima"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>893</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#desnivelBajada"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>1855</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#desnivelSubida"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>1849</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracionEnTiempo"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>5h 32m</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitudEnKm"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>35,84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+        <NamedIndividual IRI="#RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>circular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#desnivelTotal"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <Literal>13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dificultadDeOrientacion"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <Literal>ruta fácil de seguir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitudEnKm"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <Literal>5,6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#señalizacion"/>
+        <NamedIndividual IRI="#RutaSenderoLagunaDelJaral_Senderismo"/>
+        <Literal>itinerario sin problemas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altitudMaxima"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altitudMinima"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#duracionEnTiempo"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>45m</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitudEnKm"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>2,2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#señalizacion"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>itinerario sin problemas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoDeFirme"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>Arenoso o tierra suelta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoDeFirme"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>Asfalto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+        <NamedIndividual IRI="#RutaTomboloDeTrafalgar_Senderismo"/>
+        <Literal>circular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Video1_RutaAlcocebreIrtaMedieval_EnMountainBike"/>
+        <Literal>http://es.wikiloc.com/wikiloc/imgServer.do?id=109564</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Video1_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://www.youtube.com/watch?v=_4PjU3SgSkg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#URI"/>
+        <NamedIndividual IRI="#Video2_RutaBrotoOrdesaTorla_EnMountainBike"/>
+        <Literal>http://www.youtube.com/watch?v=e9BYGL7JE5g</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contieneRutaParcial"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaADistancia"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneCercaPuntoDeInteres"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneCoordenadasGPS"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneDireccionPostal"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneGuiaDeAcceso"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tienePuntoDeFinalizacion"/>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tienePuntoDeInicio"/>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tienePuntoIntermedio"/>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneServicio"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contieneRutaParcial"/>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tieneCoordenadasGPS"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tieneDireccionPostal"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tienePuntoDeFinalizacion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tienePuntoDeInicio"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#estaADistancia"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#contieneRutaParcial"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contieneRutaParcial"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaADistancia"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneCercaPuntoDeInteres"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tienePuntoDeFinalizacion"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tienePuntoDeInicio"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tienePuntoIntermedio"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contieneRutaParcial"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaADistancia"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#formaParteDeRuta"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneCoordenadasGPS"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneDireccionPostal"/>
+        <Class IRI="#DireccionPostal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneDocumentoOnline"/>
+        <Class IRI="#DocumentoOnline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneGuiaDeAcceso"/>
+        <Class IRI="#GuiaDeAcceso"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tienePuntoDeFinalizacion"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tienePuntoDeInicio"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tienePuntoIntermedio"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#URI"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#altitudMaxima"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#altitudMinima"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#calle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cercaniaDeZonasHabitadas"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#claseDeCamino"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#climaEnInvierno"/>
+        <DataProperty IRI="#condicionClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#climaEnOtoño"/>
+        <DataProperty IRI="#condicionClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#climaEnPrimavera"/>
+        <DataProperty IRI="#condicionClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#climaEnVerano"/>
+        <DataProperty IRI="#condicionClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#codigoPostal"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#condicionClimatica"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#condicionFisicaPrevia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#desnivel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#desnivelBajada"/>
+        <DataProperty IRI="#desnivel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#desnivelSubida"/>
+        <DataProperty IRI="#desnivel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#desnivelTotal"/>
+        <DataProperty IRI="#desnivel"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dificultadDeOrientacion"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dificultadDelTerreno"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadDeAguaPotable"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadDeSombra"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadEnInvierno"/>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadEnOtoño"/>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadEnPrimavera"/>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadEnVerano"/>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#duracionEnTiempo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#experienciaOrientacionPrevia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#latitud"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#localidad"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#longitud"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#longitudEnKm"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numero"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#posibilidadDeAcampada"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#provincia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#señalizacion"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tipoDeFirme"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#URI"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#altitudMaxima"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#altitudMinima"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#calle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#cercaniaDeZonasHabitadas"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#claseDeCamino"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#climaEnInvierno"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#climaEnOtoño"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#climaEnPrimavera"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#climaEnVerano"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#codigoPostal"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#condicionClimatica"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#condicionFisicaPrevia"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#desnivel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#desnivelBajada"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#desnivelSubida"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#desnivelTotal"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dificultadDeOrientacion"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dificultadDelTerreno"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadClimatica"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadDeAguaPotable"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadDeSombra"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadEnInvierno"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadEnOtoño"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadEnPrimavera"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadEnVerano"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#duracionEnTiempo"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#experienciaOrientacionPrevia"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#localidad"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#longitud"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#longitudEnKm"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#numero"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#posibilidadDeAcampada"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#provincia"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#señalizacion"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#URI"/>
+        <Class IRI="#DocumentoOnline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#altitudMaxima"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#altitudMinima"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#calle"/>
+        <Class IRI="#DireccionPostal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cercaniaDeZonasHabitadas"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#claseDeCamino"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#climaEnInvierno"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#climaEnOtoño"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#climaEnPrimavera"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#climaEnVerano"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigoPostal"/>
+        <Class IRI="#DireccionPostal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#condicionFisicaPrevia"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#desnivel"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#desnivelBajada"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#desnivelSubida"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#desnivelTotal"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dificultadDeOrientacion"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dificultadDelTerreno"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disponibilidadDeAguaPotable"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disponibilidadDeSombra"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disponibilidadEnInvierno"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disponibilidadEnOtoño"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disponibilidadEnPrimavera"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disponibilidadEnVerano"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duracionEnTiempo"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#experienciaOrientacionPrevia"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitud"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#localidad"/>
+        <Class IRI="#DireccionPostal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitud"/>
+        <Class IRI="#CoordenadasGPS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitudEnKm"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numero"/>
+        <Class IRI="#DireccionPostal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#posibilidadDeAcampada"/>
+        <ObjectUnionOf>
+            <Class IRI="#CyclingRoute"/>
+            <Class IRI="#WalkingRoute"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia"/>
+        <Class IRI="#DireccionPostal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#señalizacion"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoDeFirme"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#URI"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#altitudMaxima"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#altitudMinima"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#calle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cercaniaDeZonasHabitadas"/>
+        <DataOneOf>
+            <Literal>alejadas</Literal>
+            <Literal>atraviesa población</Literal>
+            <Literal>próximas</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#claseDeCamino"/>
+        <DataOneOf>
+            <Literal>Camino peatonal</Literal>
+            <Literal>Carretera asfaltada</Literal>
+            <Literal>Carretera forestal</Literal>
+            <Literal>Cañada de ganado</Literal>
+            <Literal>Senda</Literal>
+            <Literal>Sendero</Literal>
+            <Literal>Sin Camino</Literal>
+            <Literal>Trocha de montaña</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#climaEnInvierno"/>
+        <DataOneOf>
+            <Literal>buena</Literal>
+            <Literal>extrema</Literal>
+            <Literal>mala</Literal>
+            <Literal>regular</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#climaEnOtoño"/>
+        <DataOneOf>
+            <Literal>buena</Literal>
+            <Literal>extrema</Literal>
+            <Literal>mala</Literal>
+            <Literal>regular</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#climaEnPrimavera"/>
+        <DataOneOf>
+            <Literal>buena</Literal>
+            <Literal>extrema</Literal>
+            <Literal>mala</Literal>
+            <Literal>regular</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#climaEnVerano"/>
+        <DataOneOf>
+            <Literal>buena</Literal>
+            <Literal>extrema</Literal>
+            <Literal>mala</Literal>
+            <Literal>regular</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#codigoPostal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#condicionFisicaPrevia"/>
+        <DataOneOf>
+            <Literal>buena condición física</Literal>
+            <Literal>deportistas</Literal>
+            <Literal>entrenamiento medio</Literal>
+            <Literal>mínimo de entrenamiento</Literal>
+            <Literal>ninguna</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#desnivel"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#desnivelBajada"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#desnivelSubida"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#desnivelTotal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dificultadDeOrientacion"/>
+        <DataOneOf>
+            <Literal>el camino se pierde a veces</Literal>
+            <Literal>es necesario poner atención</Literal>
+            <Literal>imprescindible GPS</Literal>
+            <Literal>imprescindibles brújula y planos</Literal>
+            <Literal>itinerario de montaña o alta montaña sin camino</Literal>
+            <Literal>ruta confusa</Literal>
+            <Literal>ruta fácil de seguir</Literal>
+            <Literal>sin problemas</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dificultadDelTerreno"/>
+        <DataOneOf>
+            <Literal>camino en cornisa o en laderas a gran altura</Literal>
+            <Literal>cruce problemático de ríos o torrentes</Literal>
+            <Literal>dificultad extrema</Literal>
+            <Literal>sin dificultad</Literal>
+            <Literal>zonas boscosas o matorral denso</Literal>
+            <Literal>zonas sin arbolado</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disponibilidadDeAguaPotable"/>
+        <DataOneOf>
+            <Literal>abundante</Literal>
+            <Literal>escasa</Literal>
+            <Literal>nula</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disponibilidadDeSombra"/>
+        <DataOneOf>
+            <Literal>escasa</Literal>
+            <Literal>frecuente</Literal>
+            <Literal>nula</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disponibilidadEnInvierno"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disponibilidadEnOtoño"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disponibilidadEnPrimavera"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disponibilidadEnVerano"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duracionEnTiempo"/>
+        <Datatype abbreviatedIRI="xsd:duration"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#experienciaOrientacionPrevia"/>
+        <DataOneOf>
+            <Literal>con experiencia y conocimientos avanzados</Literal>
+            <Literal>conocimientos medios</Literal>
+            <Literal>excursionista</Literal>
+            <Literal>expertos</Literal>
+            <Literal>ninguna</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitud"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#localidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitud"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitudEnKm"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#posibilidadDeAcampada"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#provincia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#señalizacion"/>
+        <DataOneOf>
+            <Literal>Innecesaria</Literal>
+            <Literal>antigua, semiborrosa</Literal>
+            <Literal>clara en rocas y árboles</Literal>
+            <Literal>hitos de piedras</Literal>
+            <Literal>inexistente</Literal>
+            <Literal>itinerario sin problemas</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipoDeFirme"/>
+        <DataOneOf>
+            <Literal>Arenoso o tierra suelta</Literal>
+            <Literal>Asfalto</Literal>
+            <Literal>De cascajo o materiales sueltos</Literal>
+            <Literal>De hierba</Literal>
+            <Literal>De tierra o gravilla apisonada</Literal>
+            <Literal>Nevado, hielo, glaciar</Literal>
+            <Literal>Rocoso, piedras sueltas, pedreras de montaña</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipoDeRecorrido"/>
+        <DataOneOf>
+            <Literal>circular</Literal>
+            <Literal>el línea</Literal>
+            <Literal>por etapas</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#desnivelBajada"/>
+        <DataProperty IRI="#desnivelSubida"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#disponibilidadEnInvierno"/>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#disponibilidadEnOtoño"/>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#disponibilidadEnPrimavera"/>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#disponibilidadEnVerano"/>
+        <DataProperty IRI="#disponibilidadTodoElAño"/>
+    </DisjointDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RutaSenderoLagunaDelJaral_EnBicicleta</IRI>
+        <Literal>Ruta equivalente a RutaSenderoLagunaDelJaral_Senderismo para hacer en bicicleta</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
